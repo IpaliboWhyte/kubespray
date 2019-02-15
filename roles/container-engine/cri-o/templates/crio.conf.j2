@@ -123,17 +123,17 @@ cgroup_manager = "cgroupfs"
 # If capabilities is empty below, only the capabilities defined in the container json
 # file by the user/kube will be added.
 default_capabilities = [
-	"CHOWN", 
-	"DAC_OVERRIDE", 
-	"FSETID", 
-	"FOWNER", 
-	"NET_RAW", 
-	"SETGID", 
-	"SETUID", 
-	"SETPCAP", 
-	"NET_BIND_SERVICE", 
-	"SYS_CHROOT", 
-	"KILL", 
+	"CHOWN",
+	"DAC_OVERRIDE",
+	"FSETID",
+	"FOWNER",
+	"NET_RAW",
+	"SETGID",
+	"SETUID",
+	"SETPCAP",
+	"NET_BIND_SERVICE",
+	"SYS_CHROOT",
+	"KILL",
 ]
 
 # hooks_dir_path is the oci hooks directory for automatically executed hooks
@@ -188,7 +188,7 @@ gid_mappings = ""
 default_transport = "docker://"
 
 # pause_image is the image which we use to instantiate infra containers.
-pause_image = "docker://k8s.gcr.io/pause:3.1"
+pause_image = "docker://gcr.mirrors.ustc.edu.cn/google_containers/pause:3.1"
 
 # pause_command is the command to run in a pause_image to have a container just
 # sit there.  If the image contains the necessary information, this value need
