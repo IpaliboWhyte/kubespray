@@ -100,7 +100,7 @@
   become: true
   register: get_task
   until: get_task is succeeded
-  retries: 4
+  retries: 30
   delay: "{{ retry_stagger | random + 3 }}"
   when:
     - download.enabled

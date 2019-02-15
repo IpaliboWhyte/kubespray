@@ -28,7 +28,7 @@
     force_basic_auth: "{{ download.force_basic_auth|default(omit) }}"
   register: get_url_result
   until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
-  retries: 4
+  retries: 30
   delay: "{{ retry_stagger | default(5) }}"
   when:
     - download.enabled
