@@ -277,7 +277,7 @@ busybox_image_tag: 1.29.2
 helm_version: "v2.12.2"
 helm_image_repo: "lachlanevenson/k8s-helm"
 helm_image_tag: "{{ helm_version }}"
-tiller_image_repo: "gcr.mirrors.ustc.edu.cn/google_containers/kubernetes-helm/tiller"
+tiller_image_repo: "gcr.mirrors.ustc.edu.cn/kubernetes-helm/tiller"
 tiller_image_tag: "{{ helm_version }}"
 
 registry_image_repo: "registry"
